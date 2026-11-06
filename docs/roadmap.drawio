@@ -1,0 +1,152 @@
+<mxGraphModel dx="1600" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1560" pageHeight="1020" math="0" shadow="0" adaptiveColors="auto">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <mxCell id="header" value="&lt;b style=&quot;font-size:18px;&quot;&gt;Finance Control — Step-by-Step Frontend Engineering Roadmap&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64748b&quot; style=&quot;font-size:12px;&quot;&gt;Sequential Phase Breakdown, Task Dependencies &amp;amp; Pair-Programming Learning Milestones&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+      <mxGeometry x="120" y="20" width="1320" height="50" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="phase1" value="&lt;b&gt;PHASE 1: Foundations &amp;amp; Design System Setup&lt;/b&gt; (Sprint 1)" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#eff6ff;strokeColor=#3b82f6;fontColor=#1e40af;fontSize=13;rounded=1;arcSize=6;" vertex="1" parent="1">
+      <mxGeometry x="40" y="90" width="540" height="250" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p1_t1" value="&lt;b&gt;Task 1.1: Project Scaffolding &amp;amp; Tooling&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Setup Vite + React 19 + TypeScript (Strict mode)&lt;br&gt;• Configure ESLint, Prettier &amp;amp; path aliases (&lt;code&gt;@/*&lt;/code&gt;)&lt;br&gt;&lt;font color=&quot;#2563eb&quot;&gt;💡 Learning: Modern Bundling, Strict Types &amp;amp; tsconfig aliases&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#93c5fd;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase1">
+      <mxGeometry x="20" y="45" width="500" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p1_t2" value="&lt;b&gt;Task 1.2: Tailwind CSS &amp;amp; Glassmorphism Theme&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Define CSS variables for Dark/Light mode theme switching&lt;br&gt;• Create Glassmorphism utility classes (&lt;code&gt;backdrop-blur-md&lt;/code&gt;, border glow)&lt;br&gt;&lt;font color=&quot;#2563eb&quot;&gt;💡 Learning: CSS Custom Properties &amp;amp; HSL-based Design Tokens&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#93c5fd;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase1">
+      <mxGeometry x="20" y="110" width="500" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p1_t3" value="&lt;b&gt;Task 1.3: Core shadcn/ui &amp;amp; Radix Primitives&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Install Button, Input, Card, Dialog, Dropdown &amp;amp; Sonner Toast&lt;br&gt;• Configure &lt;code&gt;cn()&lt;/code&gt; helper (clsx + tailwind-merge) &amp;amp; Lucide Icons&lt;br&gt;&lt;font color=&quot;#2563eb&quot;&gt;💡 Learning: Headless Component Architecture &amp;amp; WAI-ARIA Accessibility&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#93c5fd;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase1">
+      <mxGeometry x="20" y="175" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="phase2" value="&lt;b&gt;PHASE 2: Data Modeling &amp;amp; Local-First Storage&lt;/b&gt; (Sprint 2)" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#f0fdf4;strokeColor=#22c55e;fontColor=#15803d;fontSize=13;rounded=1;arcSize=6;" vertex="1" parent="1">
+      <mxGeometry x="40" y="370" width="540" height="260" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p2_t1" value="&lt;b&gt;Task 2.1: Domain Types &amp;amp; Integer Cents Standard&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Define &lt;code&gt;Account&lt;/code&gt;, &lt;code&gt;Transaction&lt;/code&gt;, &lt;code&gt;Category&lt;/code&gt;, &lt;code&gt;Rule&lt;/code&gt; interfaces&lt;br&gt;• Build Cents &amp;lt;-&amp;gt; Decimal math utilities &amp;amp; currency formatters&lt;br&gt;&lt;font color=&quot;#16a34a&quot;&gt;💡 Learning: Financial Precision &amp;amp; Preventing IEEE 754 Floating-Point Bugs&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#86efac;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase2">
+      <mxGeometry x="20" y="45" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p2_t2" value="&lt;b&gt;Task 2.2: Dexie.js (IndexedDB) Database &amp;amp; Seed Data&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Initialize Dexie schema with indexed compound keys&lt;br&gt;• Build mock data generator with 200+ realistic transactions for instant testing&lt;br&gt;&lt;font color=&quot;#16a34a&quot;&gt;💡 Learning: Browser Storage Capabilities (IndexedDB vs LocalStorage)&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#86efac;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase2">
+      <mxGeometry x="20" y="115" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p2_t3" value="&lt;b&gt;Task 2.3: TanStack Query v5 Integration&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Create custom hooks: &lt;code&gt;useTransactions()&lt;/code&gt;, &lt;code&gt;useAccounts()&lt;/code&gt;, &lt;code&gt;useCategories()&lt;/code&gt;&lt;br&gt;• Implement query keys factory &amp;amp; mutation cache invalidation&lt;br&gt;&lt;font color=&quot;#16a34a&quot;&gt;💡 Learning: Server State Synchronization &amp;amp; Asynchronous Cache Invalidation&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#86efac;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase2">
+      <mxGeometry x="20" y="185" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="phase3" value="&lt;b&gt;PHASE 3: App Shell, Navigation &amp;amp; Metric Cards&lt;/b&gt; (Sprint 3)" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#faf5ff;strokeColor=#a855f7;fontColor=#6b21a8;fontSize=13;rounded=1;arcSize=6;" vertex="1" parent="1">
+      <mxGeometry x="40" y="660" width="540" height="260" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p3_t1" value="&lt;b&gt;Task 3.1: Glassmorphism Sidebar &amp;amp; Mobile Drawer&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Collapsible desktop sidebar with active route indicator&lt;br&gt;• Mobile slide-out drawer with focus trap &amp;amp; keyboard escape support&lt;br&gt;&lt;font color=&quot;#7c3aed&quot;&gt;💡 Learning: Responsive App Shell Patterns &amp;amp; Mobile UX Standards&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d8b4fe;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase3">
+      <mxGeometry x="20" y="45" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p3_t2" value="&lt;b&gt;Task 3.2: Top Header, Date Picker &amp;amp; Theme Switcher&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Quick Stats balance counter with currency symbol switcher&lt;br&gt;• Global date range filter dropdown (This Month, Last 90 Days, Custom)&lt;br&gt;&lt;font color=&quot;#7c3aed&quot;&gt;💡 Learning: Global Filter Context &amp;amp; Accessible Date Range Selectors&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d8b4fe;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase3">
+      <mxGeometry x="20" y="115" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p3_t3" value="&lt;b&gt;Task 3.3: Financial KPI Metric Cards with Skeleton Loaders&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Net Worth, Monthly Inflow, Monthly Outflow &amp;amp; Savings Rate %&lt;br&gt;• Polished animated Skeleton states (zero layout shift / CLS = 0)&lt;br&gt;&lt;font color=&quot;#7c3aed&quot;&gt;💡 Learning: Cumulative Layout Shift (CLS) Optimization &amp;amp; Skeleton UX&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d8b4fe;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase3">
+      <mxGeometry x="20" y="185" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="phase4" value="&lt;b&gt;PHASE 4: High-Performance Ledger &amp;amp; Virtual Grid&lt;/b&gt; (Sprint 4)" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#fff7ed;strokeColor=#f97316;fontColor=#c2410c;fontSize=13;rounded=1;arcSize=6;" vertex="1" parent="1">
+      <mxGeometry x="610" y="90" width="540" height="250" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p4_t1" value="&lt;b&gt;Task 4.1: TanStack Table v8 Core Setup&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Column definitions with sorting, resizing &amp;amp; column visibility toggle&lt;br&gt;• Custom renderers: formatted currency badge, category color pills&lt;br&gt;&lt;font color=&quot;#ea580c&quot;&gt;💡 Learning: Headless Data Tables &amp;amp; Decoupling Logic from Markup&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#fed7aa;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase4">
+      <mxGeometry x="20" y="45" width="500" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p4_t2" value="&lt;b&gt;Task 4.2: 60fps Virtual Scrolling (TanStack Virtual)&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Virtualize table body to handle 5,000+ transactions effortlessly&lt;br&gt;• Preserve natural browser scrollbar height &amp;amp; keyboard focus&lt;br&gt;&lt;font color=&quot;#ea580c&quot;&gt;💡 Learning: DOM Node Virtualization &amp;amp; High-Frequency Event Throttling&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#fed7aa;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase4">
+      <mxGeometry x="20" y="110" width="500" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p4_t3" value="&lt;b&gt;Task 4.3: URL SearchParams Filtering &amp;amp; Optimistic CRUD&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Sync search query, account &amp;amp; category filters with URL params&lt;br&gt;• Add/Edit modal (React Hook Form + Zod) &amp;amp; 0ms Optimistic Delete&lt;br&gt;&lt;font color=&quot;#ea580c&quot;&gt;💡 Learning: URL as Source of Truth &amp;amp; Optimistic UI Rollback Patterns&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#fed7aa;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase4">
+      <mxGeometry x="20" y="175" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="phase5" value="&lt;b&gt;PHASE 5: Financial Analytics &amp;amp; FIRE Engine&lt;/b&gt; (Sprint 5)" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#fefce8;strokeColor=#eab308;fontColor=#854d0e;fontSize=13;rounded=1;arcSize=6;" vertex="1" parent="1">
+      <mxGeometry x="610" y="370" width="540" height="260" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p5_t1" value="&lt;b&gt;Task 5.1: Cashflow Inflow vs Outflow (Recharts)&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Monthly income vs expense grouped bar chart with custom tooltips&lt;br&gt;• Dynamic timeframe selector (6 months, 12 months, all-time)&lt;br&gt;&lt;font color=&quot;#ca8a04&quot;&gt;💡 Learning: SVG Data Visualization, Responsive Containers &amp;amp; Theming&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#fde047;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase5">
+      <mxGeometry x="20" y="45" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p5_t2" value="&lt;b&gt;Task 5.2: Spending Category Donut &amp;amp; Budget Gauges&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Category expense distribution interactive pie/donut chart&lt;br&gt;• Monthly budget progress bars with alert triggers when &amp;gt; 100%&lt;br&gt;&lt;font color=&quot;#ca8a04&quot;&gt;💡 Learning: Complex Data Aggregation, Memoization (&lt;code&gt;useMemo&lt;/code&gt;)&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#fde047;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase5">
+      <mxGeometry x="20" y="115" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p5_t3" value="&lt;b&gt;Task 5.3: FIRE Calculator &amp;amp; Milestone Projection&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• 4% Safe Withdrawal Rule engine &amp;amp; Financial Independence target curve&lt;br&gt;• Interactive sliders for Savings Rate %, Expected Return &amp;amp; Retirement Age&lt;br&gt;&lt;font color=&quot;#ca8a04&quot;&gt;💡 Learning: Compound Growth Math Models &amp;amp; Interactive Simulation UI&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#fde047;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase5">
+      <mxGeometry x="20" y="185" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="phase6" value="&lt;b&gt;PHASE 6: Ingestion Engine &amp;amp; Production Hardening&lt;/b&gt; (Sprint 6)" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#ecfdf5;strokeColor=#10b981;fontColor=#065f46;fontSize=13;rounded=1;arcSize=6;" vertex="1" parent="1">
+      <mxGeometry x="610" y="660" width="540" height="260" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p6_t1" value="&lt;b&gt;Task 6.1: Drag-and-Drop CSV Statement Importer&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Multi-Bank CSV column mapper with preview modal (PapaParse)&lt;br&gt;• Duplicate detection using SHA-256 fingerprint (&lt;code&gt;date+cents+payee&lt;/code&gt;)&lt;br&gt;&lt;font color=&quot;#059669&quot;&gt;💡 Learning: File Drag-and-Drop API, Web Workers &amp;amp; Client-side Hashing&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6ee7b7;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase6">
+      <mxGeometry x="20" y="45" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p6_t2" value="&lt;b&gt;Task 6.2: Client-side Automation Rules Engine&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Condition-action rules evaluator (e.g. &lt;i&gt;if Payee matches &quot;Uber&quot; -&amp;gt; &quot;Transport&quot;&lt;/i&gt;)&lt;br&gt;• 1-Click Historic re-run engine to re-classify past messy transactions&lt;br&gt;&lt;font color=&quot;#059669&quot;&gt;💡 Learning: Rule Engine Pattern &amp;amp; High-Throughput Batch Processing&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6ee7b7;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase6">
+      <mxGeometry x="20" y="115" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="p6_t3" value="&lt;b&gt;Task 6.3: JSON Backup/Restore, Cmd+K Menu &amp;amp; a11y Audit&lt;/b&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• 1-Click Full Database JSON Export/Import for data ownership&lt;br&gt;• Global Command Palette (Cmd+K) &amp;amp; Full keyboard navigation check&lt;br&gt;&lt;font color=&quot;#059669&quot;&gt;💡 Learning: Data Portability Standards &amp;amp; Lighthouse 100/100 Accessibility&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6ee7b7;align=center;verticalAlign=middle;shadow=1;spacingLeft=8;spacingRight=8;" vertex="1" parent="phase6">
+      <mxGeometry x="20" y="185" width="500" height="60" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="guide_panel" value="&lt;b&gt;PAIR-PROGRAMMING COLLABORATION WORKFLOW&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#f8fafc;strokeColor=#475569;fontColor=#0f172a;fontSize=13;rounded=1;arcSize=6;" vertex="1" parent="1">
+      <mxGeometry x="1180" y="90" width="340" height="830" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="gp_roles" value="&lt;b&gt;How You &amp;amp; Teammate Collaborate&lt;/b&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;Developer A (resad505):&lt;/b&gt;&lt;br&gt;• Focus on UI Markup, Glassmorphism CSS, Tailwind Layout, shadcn/ui integration &amp;amp; Accessibility (a11y).&lt;br&gt;&lt;br&gt;&lt;b&gt;Developer B (Possible-o):&lt;/b&gt;&lt;br&gt;• Focus on Dexie.js schema, TanStack Query hooks, Cents math models &amp;amp; CSV parsing logic.&lt;br&gt;&lt;br&gt;&lt;b&gt;Pair Together on:&lt;/b&gt;&lt;br&gt;• TanStack Table virtual wiring &amp;amp; Recharts data transformation hooks.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=center;verticalAlign=top;spacingTop=6;shadow=1;" vertex="1" parent="guide_panel">
+      <mxGeometry x="20" y="45" width="300" height="185" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="gp_rules" value="&lt;b&gt;Pair-Programming Golden Rules&lt;/b&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;1. &lt;b&gt;Feature Branches:&lt;/b&gt; Never commit directly to &lt;code&gt;main&lt;/code&gt;. Each task gets a branch (e.g. &lt;code&gt;feat/task-1.2-tailwind-theme&lt;/code&gt;).&lt;br&gt;&lt;br&gt;2. &lt;b&gt;Code Reviews on PRs:&lt;/b&gt; One developer creates the PR, the other reviews and approves.&lt;br&gt;&lt;br&gt;3. &lt;b&gt;Senior Mentor Assistance:&lt;/b&gt; Whenever you get stuck on a concept, ask me — I guide the logic, explain edge cases, and refine the UI with you!&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=center;verticalAlign=top;spacingTop=6;shadow=1;" vertex="1" parent="guide_panel">
+      <mxGeometry x="20" y="245" width="300" height="210" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="gp_milestones" value="&lt;b&gt;Key Deliverable Milestones&lt;/b&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;🏆 M1 (End of Phase 2):&lt;/b&gt;&lt;br&gt;Working local database in browser with 200+ simulated transactions.&lt;br&gt;&lt;br&gt;&lt;b&gt;🏆 M2 (End of Phase 4):&lt;/b&gt;&lt;br&gt;Fully interactive 60fps Ledger with search, filters, and instant add/delete.&lt;br&gt;&lt;br&gt;&lt;b&gt;🏆 M3 (End of Phase 6):&lt;/b&gt;&lt;br&gt;Production-ready self-hosted app with CSV sync, FIRE calculator &amp;amp; 1-click backup.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=center;verticalAlign=top;spacingTop=6;shadow=1;" vertex="1" parent="guide_panel">
+      <mxGeometry x="20" y="470" width="300" height="200" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="gp_qa" value="&lt;b&gt;Definition of Done (DoD)&lt;/b&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Strict TypeScript (0 errors / 0 &lt;code&gt;any&lt;/code&gt;)&lt;br&gt;• Keyboard focus &amp;amp; ARIA labels working&lt;br&gt;• Responsive on 375px mobile &amp;amp; desktop&lt;br&gt;• Tested with 5,000+ records&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=center;verticalAlign=top;spacingTop=6;shadow=1;" vertex="1" parent="guide_panel">
+      <mxGeometry x="20" y="685" width="300" height="125" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="flow1" value="Next" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563eb;strokeWidth=2;fontSize=10;fontColor=#1e40af;" edge="1" parent="1" source="phase1" target="phase2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="flow2" value="Next" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16a34a;strokeWidth=2;fontSize=10;fontColor=#15803d;" edge="1" parent="1" source="phase2" target="phase3">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="flow3" value="Next" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7c3aed;strokeWidth=2;fontSize=10;fontColor=#6b21a8;" edge="1" parent="1" source="phase3" target="phase4">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="595" y="790"/>
+          <mxPoint x="595" y="215"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <mxCell id="flow4" value="Next" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ea580c;strokeWidth=2;fontSize=10;fontColor=#c2410c;" edge="1" parent="1" source="phase4" target="phase5">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="flow5" value="Next" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ca8a04;strokeWidth=2;fontSize=10;fontColor=#854d0e;" edge="1" parent="1" source="phase5" target="phase6">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+  </root>
+</mxGraphModel>

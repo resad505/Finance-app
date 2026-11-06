@@ -1,0 +1,91 @@
+<mxfile host="65bd71144e">
+    <diagram id="fBbOlFenRQB8tLCNO3F8" name="Page-1">
+        <mxGraphModel dx="683" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1550" pageHeight="919" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;b&gt;Self-Hosted Personal Finance App — Architecture &amp; Team Module Map&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64748b&quot;&gt;Privacy-First | Next.js 14 App Router | Drizzle ORM | SQLite Docker Volume | 7-Person Team Scope&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="20" width="840" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;b&gt;1. PRESENTATION TIER (Frontend — Next.js 14 App Router &amp; React)&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#eff6ff;strokeColor=#93c5fd;fontColor=#1e40af;fontSize=13;rounded=1;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="90" width="1080" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;b&gt;App Shell &amp;amp; Navigation&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#2563eb&quot;&gt;[Dev 4]&lt;/font&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• App Header &amp;amp; Sidebar&lt;br&gt;• Dark/Light Theme Toggle&lt;br&gt;• Responsive Mobile Drawer&lt;br&gt;• Global Toast Notifications&lt;br&gt;• Skeleton Loading States&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bfdbfe;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="3" vertex="1">
+                    <mxGeometry x="30" y="50" width="220" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;b&gt;Ledger &amp;amp; Transactions Grid&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#2563eb&quot;&gt;[Dev 5 — Lead]&lt;/font&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• TanStack Table v8 DataGrid&lt;br&gt;• Virtualized Infinite Scrolling&lt;br&gt;• URL SearchParams Filtering&lt;br&gt;• Optimistic UI (Delete/Edit)&lt;br&gt;• Inline Category Assign Modal&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bfdbfe;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="3" vertex="1">
+                    <mxGeometry x="280" y="50" width="240" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;b&gt;Analytics &amp;amp; FIRE Forecast&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#2563eb&quot;&gt;[Dev 6]&lt;/font&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Monthly Cashflow (Recharts)&lt;br&gt;• Spending by Category (Pie)&lt;br&gt;• Net Worth Growth Curve&lt;br&gt;• FIRE Calculator (4% Rule)&lt;br&gt;• Month-over-Month Delta&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bfdbfe;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="3" vertex="1">
+                    <mxGeometry x="550" y="50" width="230" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;b&gt;UI Design System&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#475569&quot;&gt;[Shared Foundation]&lt;/font&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• shadcn/ui &amp;amp; Radix Primitives&lt;br&gt;• Tailwind CSS utility tokens&lt;br&gt;• Lucide React Icons&lt;br&gt;• React Hook Form + Zod&lt;br&gt;• TanStack Query v5 Cache&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#cbd5e1;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="3" vertex="1">
+                    <mxGeometry x="810" y="50" width="240" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;b&gt;2. APPLICATION &amp;amp; DOMAIN LOGIC TIER (Next.js Server Actions &amp;amp; API Handlers)&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#f0fdf4;strokeColor=#86efac;fontColor=#166534;fontSize=13;rounded=1;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="340" width="1080" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;b&gt;Auth &amp;amp; Route Guard&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#15803d&quot;&gt;[Dev 7]&lt;/font&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• NextAuth / Local Master PIN&lt;br&gt;• Middleware Route Protection&lt;br&gt;• Session Token Verification&lt;br&gt;• Secure Cookie Management&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbf7d0;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="8" vertex="1">
+                    <mxGeometry x="30" y="55" width="220" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;b&gt;CSV/Excel Parser Engine&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#15803d&quot;&gt;[Dev 2]&lt;/font&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Multi-Bank CSV Importer&lt;br&gt;• Dynamic Column Mapping&lt;br&gt;• Date &amp;amp; Currency Normalizer&lt;br&gt;• Deduplication Fingerprint&lt;br&gt;  &lt;code&gt;SHA256(date+amt+payee)&lt;/code&gt;&lt;br&gt;• Batch Import Transactions&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbf7d0;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="8" vertex="1">
+                    <mxGeometry x="280" y="55" width="240" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;b&gt;Automation Rules Engine&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#15803d&quot;&gt;[Dev 3]&lt;/font&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Pattern &amp;amp; Regex Evaluator&lt;br&gt;• Priority Execution Chain&lt;br&gt;• Auto-Assign Categories&lt;br&gt;• Payee Normalization&lt;br&gt;• Historic Batch Re-running&lt;br&gt;• Dry-Run Preview Mode&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbf7d0;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="8" vertex="1">
+                    <mxGeometry x="550" y="55" width="230" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;b&gt;Ledger &amp;amp; Balance Service&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#15803d&quot;&gt;[Dev 1]&lt;/font&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• &lt;b&gt;Integer Cents Math (P0)&lt;/b&gt;&lt;br&gt;  (No float rounding errors)&lt;br&gt;• Atomic Account Balance Calc&lt;br&gt;• Transfer Pair Linking&lt;br&gt;• Zod Request Validation&lt;br&gt;• Audit Log / Mutation Events&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbf7d0;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="8" vertex="1">
+                    <mxGeometry x="810" y="55" width="240" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;b&gt;3. DATA &amp;amp; PERSISTENCE TIER (Drizzle ORM &amp;amp; Self-Hosted Storage)&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#faf5ff;strokeColor=#d8b4fe;fontColor=#6b21a8;fontSize=13;rounded=1;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="620" width="1080" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;b&gt;Drizzle ORM &amp;amp; Client&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#7e22ce&quot;&gt;[Dev 1]&lt;/font&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Type-safe Queries &amp;amp; Relations&lt;br&gt;• Schema Migrations (&lt;code&gt;drizzle-kit&lt;/code&gt;)&lt;br&gt;• Connection Pooling (WAL mode)&lt;br&gt;• Drizzle-Zod Type Inferencing&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e9d5ff;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="13" vertex="1">
+                    <mxGeometry x="30" y="55" width="230" height="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;b&gt;Database Relational Schema (Cents Standard)&lt;/b&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;• accounts:&lt;/b&gt; id, name, type, currency, balance_cents, updated_at&lt;br&gt;&lt;b&gt;• transactions:&lt;/b&gt; id, account_id, category_id, amount_cents, payee, date, fingerprint&lt;br&gt;&lt;b&gt;• categories:&lt;/b&gt; id, name, group_id, monthly_budget_cents, color&lt;br&gt;&lt;b&gt;• rules:&lt;/b&gt; id, priority, conditions_json, actions_json, is_active&lt;br&gt;&lt;b&gt;• import_batches:&lt;/b&gt; id, filename, file_hash, imported_rows, created_at&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e9d5ff;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="13" vertex="1">
+                    <mxGeometry x="290" y="55" width="490" height="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;b&gt;Storage Engine&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#7e22ce&quot;&gt;[Persistent Volume]&lt;/font&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• &lt;b&gt;SQLite File (Local-First)&lt;/b&gt;&lt;br&gt;  Path: &lt;code&gt;/data/finance.db&lt;/code&gt;&lt;br&gt;  (WAL mode enabled for speed)&lt;br&gt;• &lt;i&gt;Or PostgreSQL&lt;/i&gt; (Dual-engine)&lt;br&gt;• Automated SQLite backup cron&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#e9d5ff;align=center;verticalAlign=top;spacingTop=4;shadow=1;" parent="13" vertex="1">
+                    <mxGeometry x="815" y="45" width="235" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;b&gt;4. DEVOPS &amp;amp; CI/CD [Dev 7]&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#fff7ed;strokeColor=#fed7aa;fontColor=#c2410c;fontSize=13;rounded=1;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1160" y="90" width="310" height="760" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;b&gt;Docker Containerization&lt;/b&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• Multi-stage &lt;code&gt;Dockerfile&lt;/code&gt;&lt;br&gt;  - Base (Node 20 Alpine)&lt;br&gt;  - Deps (pnpm prune)&lt;br&gt;  - Builder (Next.js standalone)&lt;br&gt;  - Runner (unprivileged user)&lt;br&gt;• Minimal image size (&amp;lt; 160MB)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ffedd5;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="17" vertex="1">
+                    <mxGeometry x="25" y="55" width="260" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;b&gt;Docker Compose Orchestration&lt;/b&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• &lt;code&gt;docker-compose.yml&lt;/code&gt;&lt;br&gt;• Named persistent volumes:&lt;br&gt;  &lt;code&gt;./finance_data:/data&lt;/code&gt;&lt;br&gt;• Port binding (3000:3000)&lt;br&gt;• Container health check endpoints&lt;br&gt;• Restart policy: &lt;code&gt;unless-stopped&lt;/code&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ffedd5;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="17" vertex="1">
+                    <mxGeometry x="25" y="235" width="260" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;b&gt;GitHub Actions CI Pipeline&lt;/b&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• PR Automated Checks:&lt;br&gt;  1. ESLint &amp;amp; Prettier lint&lt;br&gt;  2. TypeScript &lt;code&gt;tsc --noEmit&lt;/code&gt;&lt;br&gt;  3. Vitest unit tests (Parser &amp;amp; Rules)&lt;br&gt;  4. Next.js build verification&lt;br&gt;• Branch protection on &lt;code&gt;main&lt;/code&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ffedd5;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="17" vertex="1">
+                    <mxGeometry x="25" y="415" width="260" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;b&gt;Data Resilience &amp;amp; Safety&lt;/b&gt;&lt;hr&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px;&quot;&gt;• SQLite VACUUM &amp;amp; WAL checkpointing&lt;br&gt;• 1-Click JSON export / backup&lt;br&gt;• Zero external cloud telemetry&lt;br&gt;• Full local user ownership&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ffedd5;align=center;verticalAlign=top;spacingTop=6;shadow=1;" parent="17" vertex="1">
+                    <mxGeometry x="25" y="595" width="260" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Server Actions / Mutations" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=2;fontSize=10;fontColor=#475569;" parent="1" source="5" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Parsed Rows" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=2;fontSize=10;fontColor=#475569;" parent="1" source="10" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Categorized Items" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=2;fontSize=10;fontColor=#475569;" parent="1" source="11" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Query Aggregates" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=2;fontSize=10;fontColor=#475569;" parent="1" source="6" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Type-safe Drizzle Calls" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=2;fontSize=10;fontColor=#475569;" parent="1" source="12" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Read/Write WAL" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=2;fontSize=10;fontColor=#475569;" parent="1" source="14" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Mounts Volume" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=2;fontSize=10;fontColor=#475569;" parent="1" source="19" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
